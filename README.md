@@ -1,5 +1,5 @@
-
 # elk
+[![Build Status](https://travis-ci.org/ImperialCollegeLondon/doc-puppet-elk.svg?branch=master)](https://travis-ci.org/ImperialCollegeLondon/doc-puppet-elk)
 
 This module installs the ELK Stack on a node. The ELK stack consists of Elasticsearch, Logstash, and Kibana.
 
