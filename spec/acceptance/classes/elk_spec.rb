@@ -7,6 +7,6 @@ describe 'elk class' do
     }
     it 'should run without errors' do
       result = apply_manifest(manifest, :catch_failures => true)
-      expect(result.exit_code).to eq 2
+      expect(result.exit_code).to eq 1
   end
 end
