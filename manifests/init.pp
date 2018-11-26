@@ -16,7 +16,7 @@ class elk {
 
   include ::java
   class { 'elasticsearch':
-    jvm_options => ['-Xms10g','-Xmx10g']
+    jvm_options => ['-Xms16g','-Xmx16g']
   }
   elasticsearch::instance { 'es-01': }
 
