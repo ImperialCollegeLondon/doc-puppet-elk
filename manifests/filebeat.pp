@@ -26,11 +26,11 @@ class elk::filebeat (
   package{'filebeat':
     ensure => present,
   }
-  service{'filebeat':
-    ensure  => stopped,
-    enable  => true,
-    require => Package['filebeat'],
-  }
+  #service{'filebeat':
+    #ensure  => running,
+    #enable  => true,
+    #require => Package['filebeat'],
+  #}
   file{'/etc/filebeat/filebeat.yml':
     ensure  => file,
     content => epp('elk/filebeat.yml.epp',{
